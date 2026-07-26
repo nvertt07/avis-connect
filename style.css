@@ -1,0 +1,727 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#07111f;
+color:#fff;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px 8%;
+background:rgba(7,17,31,.85);
+backdrop-filter:blur(15px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+height:70px;
+width:auto;
+display:block;
+transition:.3s;
+}
+
+.logo img:hover{
+transform:scale(1.05);
+}
+
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+.nav-btn{
+background:#2563eb;
+padding:14px 28px;
+border-radius:12px;
+font-weight:700;
+transition:.3s;
+}
+
+.nav-btn:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
+.hero{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns: 1.2fr 1fr 320px;
+    align-items:center;
+    gap:60px;
+    padding:140px 6% 80px;
+    max-width:1700px;
+    margin:auto;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+background:#162338;
+border-radius:999px;
+color:#7dd3fc;
+margin-bottom:25px;
+font-size:14px;
+}
+
+.hero h1{
+font-size:68px;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+}
+
+.hero p{
+font-size:21px;
+color:#cbd5e1;
+margin-bottom:40px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+display:inline-block;
+padding:18px 38px;
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+border-radius:15px;
+font-weight:700;
+color:white;
+transition:.3s;
+box-shadow:0 20px 45px rgba(37,99,235,.35);
+}
+
+.btn:hover{
+transform:translateY(-5px) scale(1.03);
+}
+
+.btn:hover{
+background:#1d4ed8;
+transform:translateY(-4px);
+}
+
+.btn-outline{
+border:2px solid #2563eb;
+padding:18px 36px;
+border-radius:15px;
+transition:.3s;
+}
+
+.btn-outline:hover{
+background:#2563eb;
+}
+
+.hero-image img{
+width:100%;
+max-width:560px;
+filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));
+transition:.4s;
+}
+
+.hero-image img:hover{
+transform:translateY(-10px);
+}
+/* ===== COMMENT ÇA MARCHE ===== */
+
+.how{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px;
+padding:120px 8%;
+max-width:1400px;
+margin:auto;
+}
+
+.how-image img{
+width:100%;
+max-width:430px;
+}
+
+.how-text{
+max-width:650px;
+}
+
+.section-badge{
+display:inline-block;
+padding:10px 20px;
+background:#162338;
+color:#60a5fa;
+border-radius:999px;
+margin-bottom:20px;
+}
+
+.how h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.how p{
+color:#cbd5e1;
+}
+
+.step{
+display:flex;
+gap:20px;
+margin-top:30px;
+align-items:flex-start;
+}
+
+.step span{
+width:55px;
+height:55px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:22px;
+flex-shrink:0;
+}
+
+/* ===== AVANTAGES ===== */
+
+#avantages{
+padding:120px 8%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:60px;
+}
+
+.card{
+background:linear-gradient(180deg,#172437,#101b2b);
+padding:35px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 60px rgba(37,99,235,.35);
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+.card.premium{
+background:#2563eb;
+}
+
+/* ===== TARIFS ===== */
+
+#tarifs{
+padding:120px 8%;
+}
+
+.pricing{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:60px;
+}
+
+.price-card{
+background:#111c2d;
+padding:45px;
+border-radius:25px;
+width:340px;
+text-align:center;
+position:relative;
+}
+
+.price-card.premium{
+background:#2563eb;
+transform:scale(1.05);
+}
+
+.popular{
+position:absolute;
+top:-15px;
+left:50%;
+transform:translateX(-50%);
+background:#fff;
+color:#2563eb;
+padding:8px 18px;
+border-radius:999px;
+font-size:14px;
+font-weight:700;
+}
+
+.price{
+font-size:64px;
+font-weight:800;
+margin:25px 0;
+}
+
+.price-card ul{
+list-style:none;
+margin-bottom:30px;
+}
+
+.price-card li{
+margin:15px 0;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+padding:120px 8%;
+text-align:center;
+}
+
+.contact-box{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:50px;
+}
+
+.contact-box div{
+background:#111c2d;
+padding:35px;
+border-radius:20px;
+min-width:260px;
+}
+
+/* ===== FAQ ===== */
+
+.faq{
+padding:120px 8%;
+max-width:1000px;
+margin:auto;
+}
+
+.faq-item{
+background:#111c2d;
+padding:30px;
+border-radius:20px;
+margin-top:25px;
+}
+
+.faq-item h3{
+margin-bottom:12px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:70px 8%;
+background:#050b15;
+text-align:center;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:35px;
+margin:35px 0;
+flex-wrap:wrap;
+}
+
+.footer-links a:hover{
+color:#60a5fa;
+}
+
+.copyright{
+color:#94a3b8;
+margin-top:25px;
+}
+
+/* ===== WHATSAPP ===== */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#22c55e;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+transition:.3s;
+z-index:999;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+.hero,
+.how{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.how h2{
+font-size:38px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.step{
+text-align:left;
+}
+
+nav{
+display:none;
+}
+
+.header{
+padding:20px;
+}
+
+}
+/* Animations */
+
+.hidden{
+opacity:0;
+transform:translateY(60px);
+transition:.8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Dégradé du Hero */
+
+.hero::before{
+content:"";
+position:absolute;
+top:-250px;
+right:-250px;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#2563eb55,transparent 70%);
+filter:blur(60px);
+z-index:-1;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+/* Sélection du texte */
+
+::selection{
+background:#2563eb;
+color:white;
+}
+
+/* Barre de défilement */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#07111f;
+}
+
+::-webkit-scrollbar-thumb{
+background:#2563eb;
+border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#1d4ed8;
+}
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+top:-200px;
+right:-200px;
+background:radial-gradient(circle,#2563eb55,transparent 70%);
+filter:blur(70px);
+z-index:-1;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+.commande-hero{
+    max-width:900px;
+    margin:100px auto 60px;
+    text-align:center;
+    padding:0 20px;
+}
+
+.commande-hero h1{
+    font-size:56px;
+    color:white;
+    margin:20px 0;
+}
+
+.commande-hero p{
+    color:#b9c2d0;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.badge{
+    display:inline-block;
+    padding:12px 22px;
+    background:#1b2c55;
+    color:#5ea2ff;
+    border-radius:30px;
+    font-weight:600;
+}
+.offres{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin:80px auto;
+    max-width:1200px;
+}
+
+.offre{
+    width:360px;
+    background:#111827;
+    border:1px solid #2b3445;
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    text-align:center;
+    transition:.3s;
+}
+
+.offre:hover{
+    transform:translateY(-8px);
+    border-color:#4285F4;
+}
+
+.offre h2{
+    font-size:28px;
+}
+
+.prix{
+    font-size:52px;
+    font-weight:bold;
+    color:#4285F4;
+    margin:25px 0;
+}
+
+.offre ul{
+    list-style:none;
+    padding:0;
+    line-height:2;
+    color:#cbd5e1;
+}
+
+.offre-btn{
+    margin-top:30px;
+    width:100%;
+    padding:16px;
+    background:#4285F4;
+    border:none;
+    color:white;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.offre-btn:hover{
+    background:#2f6fe6;
+}
+.formulaire{
+    max-width:900px;
+    margin:100px auto;
+    padding:40px;
+}
+
+.formulaire h2{
+    color:white;
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.formulaire form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.formulaire input,
+.formulaire textarea{
+    background:#111827;
+    border:1px solid #2b3445;
+    border-radius:12px;
+    padding:18px;
+    color:white;
+    font-size:17px;
+    outline:none;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus{
+    border-color:#4285F4;
+}
+
+.formulaire textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.payer-btn{
+    background:#4285F4;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:18px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.payer-btn:hover{
+    background:#2f6fe6;
+}
+.resume{
+    margin-top:40px;
+    background:#111827;
+    border:1px solid #2b3445;
+    border-radius:18px;
+    padding:30px;
+    color:white;
+}
+
+.resume h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.resume p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+.resume hr{
+    border:none;
+    border-top:1px solid #2b3445;
+    margin:20px 0;
+}
+
+.offre.active{
+    border:2px solid #4285F4;
+    box-shadow:0 0 25px rgba(66,133,244,.35);
+    transform:translateY(-5px);
+}
+.hero-images{
+    flex:1.4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-card{
+    width:100%;
+    max-width:600px;
+    height:auto;
+    border-radius:25px;
+    box-shadow:0 30px 60px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.hero-card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+.stats{
+    min-width:300px;
+}
+
+.stat{
+    margin-bottom:40px;
+}
+
+.stat h2{
+    font-size:52px;
+    margin-bottom:10px;
+}
+
+.stat p{
+    font-size:24px;
+    line-height:1.4;
+}

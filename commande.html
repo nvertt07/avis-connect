@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander | Avis Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.JPG" alt="Avis Connect">
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#avantages">Avantages</a>
+        <a href="index.html#tarifs">Tarifs</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="commande-hero">
+
+    <span class="badge">Commande sécurisée</span>
+
+    <h1>Commandez votre carte NFC</h1>
+
+    <p>
+        Choisissez votre offre et remplissez le formulaire.
+        Nous configurerons votre carte avec le lien Google Maps de votre établissement avant son expédition.
+    </p>
+
+</section>
+<section class="offres">
+
+<div class="offre" id="offre20">
+        <h2>Carte configurée</h2>
+
+        <div class="prix">20 €</div>
+
+        <ul>
+            <li>✔ Carte NFC</li>
+            <li>✔ Configuration du lien Google Maps</li>
+            <li>✔ Prête à être utilisée</li>
+        </ul>
+
+        <button class="offre-btn" id="btn20">
+    Choisir cette offre
+</button>
+    </div>
+
+<div class="offre premium" id="offre30">
+        <h2>Offre Premium</h2>
+
+        <div class="prix">30 €</div>
+
+        <ul>
+            <li>✔ Carte personnalisée</li>
+            <li>✔ Configuration complète</li>
+            <li>✔ Remplacement gratuit en cas de casse ou de problème</li>
+        </ul>
+
+    <button class="offre-btn" id="btn30">
+    Choisir cette offre
+</button>
+    </div>
+
+</section>
+<section class="formulaire">
+
+    <h2>Vos informations</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nom de l'établissement" required>
+
+        <input type="text" placeholder="Nom du responsable" required>
+
+        <input type="email" placeholder="Adresse e-mail" required>
+
+        <input type="tel" placeholder="Téléphone" required>
+
+        <input type="text" placeholder="Lien Google Maps de votre établissement" required>
+
+        <input type="text" placeholder="Adresse de livraison" required>
+
+        <textarea placeholder="Informations complémentaires (facultatif)"></textarea>
+
+        <button type="submit" class="payer-btn" id="payerBtn">
+    Payer 20 €
+</button>
+    </form>
+<div class="resume">
+
+    <h3>Résumé de votre commande</h3>
+
+    <p>
+        Offre choisie :
+        <span id="offreChoisie">Carte configurée</span>
+    </p>
+
+    <p>
+        Prix :
+        <strong id="prixChoisi">20 €</strong>
+    </p>
+
+    <hr>
+
+    <p>🔒 Paiement 100 % sécurisé</p>
+
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>
