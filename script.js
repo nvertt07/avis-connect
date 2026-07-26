@@ -106,5 +106,9 @@ const form = document.querySelector(".formulaire form");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    alert("Le paiement Stripe sera connecté ici.");
+    if (prixChoisi.textContent.includes("20")) {
+        window.location.href = "https://buy.stripe.com/28E28q1FoakD4MM3gu1VK00";
+    } else {
+        window.location.href = "https://buy.stripe.com/9B614mbfYfEXgvu04i1VK01";
+    }
 });
